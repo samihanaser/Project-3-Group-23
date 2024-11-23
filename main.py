@@ -138,9 +138,9 @@ def main():
     manager = ManageSchedule()
 
 # Add caregivers
-    manager.add_person(Manager("Alice", "123-456", "alice@example.com", 20, True))
-    manager.add_person(Manager("Bob", "789-012", "bob@example.com"))
-    manager.add_person(Manager("Charlie", "345-678", "charlie@example.com", 20, True))
+    manager.add_person(Manager("Alica", "801-123-456", "alica@gmail.com", 20, True))
+    manager.add_person(Manager("Bobby", "410-789-012", "bob@yahoo.com", 20, True))
+    manager.add_person(Manager("Chucky", "315-345-678", "charlie@aol.com", 20, True))
 
     # Update availability
     manager.person[0].set_availability(0, 0, 'preferred')  # Monday AM
@@ -155,4 +155,4 @@ def main():
     # Calculate and display payroll
     payroll = manager.calculate_payroll()
     for name, pay in payroll.items():
-        print(f"{name}: ${pay:.2f}") 
+        print(f"{name}: ${pay:.2f}")
